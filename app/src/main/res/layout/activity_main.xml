@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/photo1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:layout_marginTop="19dp"
+        android:id="@+id/Nuber_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="выход!"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="@id/number1"
+        app:layout_constraintStart_toStartOf="@id/number1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="130dp"
+        android:gravity="center"
+        android:text="Добро пожаловать"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Nuber_2"
+        tools:layout_editor_absoluteY="101dp" />
+
+    <TextView
+
+        android:id="@+id/nextCode1"
+        android:layout_width="336dp"
+        android:layout_height="54dp"
+        android:layout_margin="30dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Выполните выход или зарегистрируйтесь"
+        android:textColor="#CCC6C6"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/emile_address"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/emile_address"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/editrext10"
+        android:gravity="center"
+        android:hint="Введите вашу почту!"
+        app:layout_constraintBottom_toTopOf="@id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/editrext10"
+        android:gravity="center"
+        android:hint="Введите пороль!"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="296dp"
+        android:layout_height="55dp"
+        android:layout_margin="140dp"
+        android:gravity="center"
+        android:text="Войти!"
+        app:layout_constraintBottom_toTopOf="@id/text2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <TextView
+        android:id="@id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="забыли свой акаунт!"
+        android:textColor="#939191"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/textcolor"
+        android:text="нажмите сюда! "
+        android:textColor="#BDAE22"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
